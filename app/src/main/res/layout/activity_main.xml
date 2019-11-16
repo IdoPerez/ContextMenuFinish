@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Choose kind:"
+        android:textSize="20dp"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/rg">
+
+        <RadioButton
+            android:id="@+id/Geometric"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Geometric series"
+            android:textSize="15dp"/>
+
+        <RadioButton
+            android:id="@+id/Invoice"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Invoice series"
+            android:textSize="15dp"/>
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <EditText
+        android:id="@+id/First"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:hint="First Number"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <EditText
+        android:id="@+id/Diff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:hint="Difference"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Done"
+        android:textSize="20dp"
+        android:onClick="NextActivity"/>
+</LinearLayout>
